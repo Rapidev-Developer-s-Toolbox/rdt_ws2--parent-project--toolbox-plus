@@ -1,0 +1,23 @@
+{
+  "folders": [
+    {
+      "path": "../../../hybrid_workspaces/PEZ_ws1"
+    },
+    {
+      "path": "aptinfo-tools"
+    },
+    {
+      "path": "../../../bash_workspaces/snippets"
+    },
+    {
+      "path": "../../C_ws1/alsa-driver-us1 "
+    }
+	},
+  {
+    "settings": [
+      "editor.fontFamily": "Helvetica",
+      "c-cpp-flylint.defines": [],
+
+    ]
+  }
+}
