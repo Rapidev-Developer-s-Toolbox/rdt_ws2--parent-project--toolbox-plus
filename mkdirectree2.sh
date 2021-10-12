@@ -7,7 +7,7 @@ function init {
 
 # TODO: write function to set PROJECT_TYPE to DEB,SBOOT,etc.
 
-if [[ "${1}" = '$(--parent' ]] | [[ "${1}" = '-parent') ]];then
+if [[ "${1}" = '$(--parent' ]] | [[ "${1}" = "-parent" ]];then
     if [[  ]]
     echo ''
     DT_BASE=$
@@ -27,7 +27,7 @@ parseargs ()
         if [ "${arg}" = "${0}" ] && [ NEEDS_PARSED = 'Y' ] 
         then
             continue
-        elif [ NEEDS_PARSED = 'N' ]
+        elif [ NEEDS_PARSED = 'N' ]; then
 
         else
             case "${arg}" in
