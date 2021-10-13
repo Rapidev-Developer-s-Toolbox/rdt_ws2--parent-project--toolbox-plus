@@ -21,6 +21,7 @@ PARENT=-1
 
 parseargs () 
 {
+    
     for arg in "${@}"
     do
 
@@ -28,7 +29,7 @@ parseargs ()
         then
             continue
         elif [ NEEDS_PARSED = 'N' ]; then
-
+            true
         else
             case "${arg}" in
                 '-p'|'--parent')
