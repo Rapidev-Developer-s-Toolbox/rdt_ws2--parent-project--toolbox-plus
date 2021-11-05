@@ -48,23 +48,25 @@ parseargs ()
 
 # creates the BASE_DIRS array. Populates array with all directories that need populated.
 calculate_bases_from_args () {
-  # if $PARENT set then count directory children. All children should be targets. If 0, error
-  if [ -z "${PARENT}" ]
+  
+  if [ -z "${PARENT}" ]  
   then
-    BASE=''
-    
-    echo "${BASES}" # DEBUG ONLY -- COMMENT ME!!
-  elif [ -d "${PARENT}" ]
-  then
-    BASES=()
-    BASES="${PARENT}/*"
-    echo "${BASES}" # DEBUG ONLY -- COMMENT ME!!
-  BASE_C
-    for dir in "${PARENT}"/*
+    BASE_DIRS=''  
+    echo "${BASE_DIRS}" # DEBUG ONLY -- COMMENT ME!!
+  elif [ -d "${PARENT}" ]# if $PARENT set 
+  then             
+  # then count directory children. All children should be targets. If 0, error
+    BASE_DIRS=()
+    BASE_DIRS=("${PARENT}/*")
+    echo "${BASE_DIRS[@]}" # DEBUG ONLY -- COMMENT ME!!
+    BASE_COUNT="${#BASE_DIRS[@]}"
+    MAX_INDEX="${BASE_COUNT}-1"
+    for ndx in seq 0 "${MAX_INDEX}"
     do
-      
+      mksrcdirtree  "${BASE_DIRS[$ndx]}"
     done
   else
+    true
   fi  
 }
 
@@ -75,19 +77,19 @@ function mksrcdirtree {
    # for i in ./*
     for i in "${@}"
     do
-        echo "Processing $i ..."
-        if [ -d $i ]    
+        echo "Processing ${i} ..."
+        if [ -d "$i" ]    
         then
-            echo "Adding directories to $i."
-            mkdir -p $i/MISC,RESOURCES,SOURCE/\{tools\},TARGET,TEST
+            echo "Adding directories to ${i}."
+            mkdir -p "$i"/MISC,RESOURCES,SOURCE/\{tools\},TARGET,TEST
             if [[ "${PRJ_TYPE}" = "debian" ]]
             then
                 mkdir SOURCE/debian
             fi
             echo "All good!"
         else    
-            errmsg=$([ -d $i ])
-            echo "ERROR: couldn't make directories!"
+            errmsg="could not make directories!"
+            printf "ERROR: %s" "${errmsg}"
             echo errmsg
             return 1
         fi
