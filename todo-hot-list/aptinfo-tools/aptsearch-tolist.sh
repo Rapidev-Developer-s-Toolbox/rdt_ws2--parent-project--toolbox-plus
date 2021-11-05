@@ -9,6 +9,9 @@ GREP=0
 SEARCH_TERM=''
 GREP_TERM=''
 
-case "${#}" in
+case "${1}" in
 
-1)
+1) 
+  true
+;;
+esac

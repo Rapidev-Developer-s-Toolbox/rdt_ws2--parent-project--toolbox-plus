@@ -18,38 +18,54 @@ source
 
 
 parseargs () 
-{
-    
-    for arg in "${@}"
-    do
-
-        if [ "${arg}" = "${0}" ] && [ "${NEEDS_PARSED}" = 'Y' ] 
-        then
-            continue
-        elif [ "${NEEDS_PARSED}" = 'N' ]; then
-            NEEDS_PARSED='Y'
-            continue
-        else
-            case "${arg}" in
-                '-p'|'--parent')
-                    export PARENT="${arg+1}"
-                    NEEDS_PARSED='N'
-                ;;
-                '-a'|'--all')
-                    export BUILD_ALL=0
-                ;;
-                *)
-                    if [ "${arg+1}" ]; then
-                        true
-                    fi
-            esac
-        fi
-    done
+{  
+  for arg in "${@}"
+  do
+    if [ "${arg}" = "${0}" ] && [ "${NEEDS_PARSED}" = 'Y' ] 
+    then
+      continue
+    elif [ "${NEEDS_PARSED}" = 'N' ]
+    then
+      NEEDS_PARSED='Y'
+      continue
+    else
+      case "${arg}" in
+        '-p'|'--parent')
+          export PARENT="${arg+1}" && shift 2
+          NEEDS_PARSED='N'
+        ;;
+        '-a'|'--all')
+          export BUILD_ALL=0 && shift
+        ;;
+        *)
+          if [ "${arg+1}" ]; then
+            true
+          fi
+      esac
+    fi
+  done
 }
 
-creates the BASE_DIRS array. Populates array with all directories that need populated.
+# creates the BASE_DIRS array. Populates array with all directories that need populated.
 calculate_bases_from_args () {
-  if [  ]  
+  # if $PARENT set then count directory children. All children should be targets. If 0, error
+  if [ -z "${PARENT}" ]
+  then
+    BASE=''
+    
+    echo "${BASES}" # DEBUG ONLY -- COMMENT ME!!
+  elif [ -d "${PARENT}" ]
+  then
+    BASES=()
+    BASES="${PARENT}/*"
+    echo "${BASES}" # DEBUG ONLY -- COMMENT ME!!
+  BASE_C
+    for dir in "${PARENT}"/*
+    do
+      
+    done
+  else
+  fi  
 }
 
 
