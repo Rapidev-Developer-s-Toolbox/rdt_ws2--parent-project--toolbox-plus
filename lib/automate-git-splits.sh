@@ -25,10 +25,10 @@ elif [ "${1}" = "-p" ] || [ "${1}" = "--message-prefix" ]; then
 		PREFIX="${2}"
 		DRAWER="${4}"
 	fi
-elif [ -n "${1}" ]; then
+elif [ -d "${1}" ]; then
 	DRAWER="${1}"
-else
-	
+elif [ -f  ]
+	throw_fatal_error 
 
 fi
 
