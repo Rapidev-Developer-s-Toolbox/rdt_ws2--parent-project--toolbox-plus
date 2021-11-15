@@ -5,38 +5,42 @@
 
 using namespace std;
 
-struct soption_int_t
+typedef struct soption_int_t
 {
   string* name;
   string* desc;
-  bool req;
+  bool is_req;
   int lowval;
   int highval;
   int val;
   string* i_question; // the question to display in interactive mode when getting the value 
-};
+} SimpleSettingsOption_Int;
 
-struct soption_bool_t
+typedef struct soption_bool_t
 {
   string* name;
   string* desc;
-  bool req;
+  bool is_req;
   bool val;
   string* i_question; // the question to display in interactive mode when getting the value 
-};
+} SimpleSettingsOption_Bool;
 
-class Settings 
+
+
+class Setting
 {
 
 public:
-  //The sobarr array contains all bool options defined so far, in the order that they appear in the list.
+
+	
+  //The sobarr array contains all bool options defined so far, in the order in which they appear in the list.
   // struct  soption_bool_t * sobarr[25];
   // int barr_currentsize = 0;
-  vector<soption_bool_t> sopt_bool_vec;
+  vector<soption_bool_t*> sopt_bool_vec;
   // ''' int opts ''' 
   // struct  soption_int_t * soiarr[25];
   // int iarr_currentsize = 0;
-  vector<soption_int_t> sopt_int_vec;
+  vector<soption_int_t*> sopt_int_vec;
 
   // Corresponds to the order of option types for this settings list. 
   // If value = true, type = soption_bool_t. If false, soption_int_t  
@@ -44,7 +48,7 @@ public:
   // represents the index of the next opt to be acted on.  
   int cursor = 0;
 
-  soption_bool_t create_bool_option (string * pname, string * pdesc, bool preq, bool pval, string * pqstn)
+  soption_bool_t create_bool_option (string* pname, string* pdesc, bool preq, bool pval, string* pqstn)
   {
 
     soption_bool_t opt ={
