@@ -1,12 +1,12 @@
 #! /usr/bin/env bash
 
-#note: look at 'jq', the cli JSON parser (man jq), for assistance parsing the json structure I've created for storing and querying data about each split / SG_drawer. 
+#note: look at 'jq', the cli JSON parser (man jq), for assistance parsing the json structure I've created for storing and querying data about each split / SG_drawer.
 
-#USAGE: 
+#USAGE:
 #      splitgit DRWR                                                  ~ create a new git repository with DRWR as base directory
 #      splitgit all                                                   ~ same as running an instance of `splitgit DRWR` for every SG_drawer
-#      splitgit (-d|--SG_drawer) DRWR                                    ~ create a new git repository with DRWR as base directory
-#      splitgit (-d|--SG_drawer) DRWR (-p|--message-prefix) PRFX         ~ create a new git repository with DRWR as base directory and PRFX used as a prefix for any commits 
+#      splitgit (-d|--drawer) DRWR                                    ~ create a new git repository with DRWR as base directory
+#      splitgit (-d|--drawer) DRWR (-p|--message-prefix) PRFX         ~ create a new git repository with DRWR as base directory and PRFX used as a prefix for any commits
 #
 #      Anywhere DRWR is listed above, it can be replaced with 'all' as in the second version.
 #
@@ -19,7 +19,6 @@ echo "${0}: If result was not 0, then script is broken." | tee -a liblog.log
 SG_PARENT={}
 SG_DRAWER=-1
 SG_PREFIX=-1
-
 
 # this needs changed. For now, it only supports usages 2 & 3. needs to be fed through an argparser.
 
@@ -47,11 +46,10 @@ else
 	SG_splitone "${SG_DRAWER}"
 fi
 
-
-mklist_local_drwrs () {
+mklist_local_drwrs() {
 	true
 }
 
-mklist_remote_drwrs () {
+mklist_remote_drwrs() {
 	true
 }

@@ -32,24 +32,19 @@
 
         "bases":
         {
-          "MISC":
-          {
+          "MISC": {
             "Q": ""
           },
-          "RESOURCES":
-          {
+          "RESOURCES": {
             "Q": ""
           },
-          "SOURCE": 
-          {
+          "SOURCE": {
             "Q": ""
           },
-          "TARGET": 
-          {
+          "TARGET": {
             "Q": ""
           },
-          "TEST": 
-          {
+          "TEST": {
             "Q": ""
           }
         }
