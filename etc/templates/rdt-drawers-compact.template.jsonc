@@ -1,0 +1,890 @@
+
+// list of all drawers (subdirs of dev-tool-box directory.) 
+// Used by git-subtree splits script.
+{
+	"drawers": [{
+      "id": 1,
+      "names": {
+        "original": "",
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "description": "",
+      "version": "0.0.01",
+      "devteam": {
+        "lead": "",
+        "devs":[]
+      },
+      "paths": {
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "tree": {
+        "sections": {
+          "MISC": {
+            "Q": ""
+          },
+          "RESOURCES": {
+            "Q": ""
+          },
+          "SOURCE": {
+            "Q": ""
+          },
+          "TARGET": {
+            "Q": ""
+          },
+          "TEST": {
+            "Q": ""
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "names": 
+      {
+        "original": "",
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "description": "",
+      "version": "0.0.01",
+      "devteam":
+      {
+        "lead": "",
+        "devs":
+        [
+
+        ]
+      },
+      "paths":
+      {
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "tree":
+      {
+        "bases":
+        {
+          "MISC":
+          {
+            "Q": ""
+          },
+          "RESOURCES":
+          {
+            "Q": ""
+          },
+          "SOURCE": 
+          {
+            "Q": ""
+          },
+          "TARGET": 
+          {
+            "Q": ""
+          },
+          "TEST": 
+          {
+            "Q": ""
+          }
+        }
+      }
+    },
+    {
+      "id": 3,
+      "names": 
+      {
+        "original": "",
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "description": "",
+      "version": "0.0.01",
+      "devteam":
+      {
+        "lead": "",
+        "devs":
+        [
+
+        ]
+      },
+      "paths":
+      {
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "tree":{
+
+        "bases":
+        {
+          "MISC":
+          {
+            "Q": ""
+          },
+          "RESOURCES":
+          {
+            "Q": ""
+          },
+          "SOURCE": 
+          {
+            "Q": ""
+          },
+          "TARGET": 
+          {
+            "Q": ""
+          },
+          "TEST": 
+          {
+            "Q": ""
+          }
+        }
+      }
+    },
+    {
+      "id": 4,
+      "names": 
+      {
+        "original": "",
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "description": "",
+      "version": "0.0.01",
+      "devteam":
+      {
+        "lead": "",
+        "devs":
+        [
+
+        ]
+      },
+      "paths":
+      {
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "tree":
+      {
+        "bases":
+        {
+          "MISC":
+          {
+            "Q": ""
+          },
+          "RESOURCES":
+          {
+            "Q": ""
+          },
+          "SOURCE": 
+          {
+            "Q": ""
+          },
+          "TARGET": 
+          {
+            "Q": ""
+          },
+          "TEST": 
+          {
+            "Q": ""
+          }
+        }
+      }
+    },
+    {
+      "id": 5,
+      "names": 
+      {
+        "original": "",
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "description": "",
+      "version": "0.0.01",
+      "devteam":
+      {
+        "lead": "",
+        "devs":
+        [
+
+        ]
+      },
+      "paths":
+      {
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "tree":{
+
+        "bases":
+        {
+          "MISC":
+          {
+            "Q": ""
+          },
+          "RESOURCES":
+          {
+            "Q": ""
+          },
+          "SOURCE": 
+          {
+            "Q": ""
+          },
+          "TARGET": 
+          {
+            "Q": ""
+          },
+          "TEST": 
+          {
+            "Q": ""
+          }
+        }
+      }
+    },
+    {
+      "id": 6,
+      "names": 
+      {
+        "original": "",
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "description": "",
+      "version": "0.0.01",
+      "devteam":
+      {
+        "lead": "",
+        "devs":
+        [
+
+        ]
+      },
+      "paths":
+      {
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "tree":
+      {
+        "bases":
+        {
+          "MISC":
+          {
+            "Q": ""
+          },
+          "RESOURCES":
+          {
+            "Q": ""
+          },
+          "SOURCE": 
+          {
+            "Q": ""
+          },
+          "TARGET": 
+          {
+            "Q": ""
+          },
+          "TEST": 
+          {
+            "Q": ""
+          }
+        }
+      }
+    },
+    {
+      "id": 7,
+      "names": 
+      {
+        "original": "",
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "description": "",
+      "version": "0.0.01",
+      "devteam":
+      {
+        "lead": "",
+        "devs":
+        [
+
+        ]
+      },
+      "paths":
+      {
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "tree":{
+
+        "bases":
+        {
+          "MISC":
+          {
+            "Q": ""
+          },
+          "RESOURCES":
+          {
+            "Q": ""
+          },
+          "SOURCE": 
+          {
+            "Q": ""
+          },
+          "TARGET": 
+          {
+            "Q": ""
+          },
+          "TEST": 
+          {
+            "Q": ""
+          }
+        }
+      }
+    },
+    {
+      "id": 8,
+      "names": 
+      {
+        "original": "",
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "description": "",
+      "version": "0.0.01",
+      "devteam":
+      {
+        "lead": "",
+        "devs":
+        [
+
+        ]
+      },
+      "paths":
+      {
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "tree":
+      {
+        "bases":
+        {
+          "MISC":
+          {
+            "Q": ""
+          },
+          "RESOURCES":
+          {
+            "Q": ""
+          },
+          "SOURCE": 
+          {
+            "Q": ""
+          },
+          "TARGET": 
+          {
+            "Q": ""
+          },
+          "TEST": 
+          {
+            "Q": ""
+          }
+        }
+      }
+    },
+    {
+      "id": 9,
+      "names": 
+      {
+        "original": "",
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "description": "",
+      "version": "0.0.01",
+      "devteam":
+      {
+        "lead": "",
+        "devs":
+        [
+
+        ]
+      },
+      "paths":
+      {
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "tree":{
+
+        "bases":
+        {
+          "MISC":
+          {
+            "Q": ""
+          },
+          "RESOURCES":
+          {
+            "Q": ""
+          },
+          "SOURCE": 
+          {
+            "Q": ""
+          },
+          "TARGET": 
+          {
+            "Q": ""
+          },
+          "TEST": 
+          {
+            "Q": ""
+          }
+        }
+      }
+    },
+    {
+      "id": 10,
+      "names": 
+      {
+        "original": "",
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "description": "",
+      "version": "0.0.01",
+      "devteam":
+      {
+        "lead": "",
+        "devs":
+        [
+
+        ]
+      },
+      "paths":
+      {
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "tree":
+      {
+        "bases":
+        {
+          "MISC":
+          {
+            "Q": ""
+          },
+          "RESOURCES":
+          {
+            "Q": ""
+          },
+          "SOURCE": 
+          {
+            "Q": ""
+          },
+          "TARGET": 
+          {
+            "Q": ""
+          },
+          "TEST": 
+          {
+            "Q": ""
+          }
+        }
+      }
+    },
+    {
+      "id": 11,
+      "names": 
+      {
+        "original": "",
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "description": "",
+      "version": "0.0.01",
+      "devteam":
+      {
+        "lead": "",
+        "devs":
+        [
+
+        ]
+      },
+      "paths":
+      {
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "tree":{
+
+        "bases":
+        {
+          "MISC":
+          {
+            "Q": ""
+          },
+          "RESOURCES":
+          {
+            "Q": ""
+          },
+          "SOURCE": 
+          {
+            "Q": ""
+          },
+          "TARGET": 
+          {
+            "Q": ""
+          },
+          "TEST": 
+          {
+            "Q": ""
+          }
+        }
+      }
+    },
+    {
+      "id": 12,
+      "names": 
+      {
+        "original": "",
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "description": "",
+      "version": "0.0.01",
+      "devteam":
+      {
+        "lead": "",
+        "devs":
+        [
+
+        ]
+      },
+      "paths":
+      {
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "tree":
+      {
+        "bases":
+        {
+          "MISC":
+          {
+            "Q": ""
+          },
+          "RESOURCES":
+          {
+            "Q": ""
+          },
+          "SOURCE": 
+          {
+            "Q": ""
+          },
+          "TARGET": 
+          {
+            "Q": ""
+          },
+          "TEST": 
+          {
+            "Q": ""
+          }
+        }
+      }
+    },
+    {
+      "id": 13,
+      "names": 
+      {
+        "original": "",
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "description": "",
+      "version": "0.0.01",
+      "devteam":
+      {
+        "lead": "",
+        "devs":
+        [
+
+        ]
+      },
+      "paths":
+      {
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "tree":{
+
+        "bases":
+        {
+          "MISC":
+          {
+            "Q": ""
+          },
+          "RESOURCES":
+          {
+            "Q": ""
+          },
+          "SOURCE": 
+          {
+            "Q": ""
+          },
+          "TARGET": 
+          {
+            "Q": ""
+          },
+          "TEST": 
+          {
+            "Q": ""
+          }
+        }
+      }
+    },
+    {
+      "id": 14,
+      "names": 
+      {
+        "original": "",
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "description": "",
+      "version": "0.0.01",
+      "devteam":
+      {
+        "lead": "",
+        "devs":
+        [
+
+        ]
+      },
+      "paths":
+      {
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "tree":
+      {
+        "bases":
+        {
+          "MISC":
+          {
+            "Q": ""
+          },
+          "RESOURCES":
+          {
+            "Q": ""
+          },
+          "SOURCE": 
+          {
+            "Q": ""
+          },
+          "TARGET": 
+          {
+            "Q": ""
+          },
+          "TEST": 
+          {
+            "Q": ""
+          }
+        }
+      }
+    },
+    {
+      "id": 15,
+      "names": 
+      {
+        "original": "",
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "description": "",
+      "version": "0.0.01",
+      "devteam":
+      {
+        "lead": "",
+        "devs":
+        [
+
+        ]
+      },
+      "paths":
+      {
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "tree":{
+
+        "bases":
+        {
+          "MISC":
+          {
+            "Q": ""
+          },
+          "RESOURCES":
+          {
+            "Q": ""
+          },
+          "SOURCE": 
+          {
+            "Q": ""
+          },
+          "TARGET": 
+          {
+            "Q": ""
+          },
+          "TEST": 
+          {
+            "Q": ""
+          }
+        }
+      }
+    },
+    {
+      "id": 16,
+      "names": 
+      {
+        "original": "",
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "description": "",
+      "version": "0.0.01",
+      "devteam":
+      {
+        "lead": "",
+        "devs":
+        [
+
+        ]
+      },
+      "paths":
+      {
+        "github": "",
+        "gitlab": "",
+        "website_repo": ""
+      },
+      "tree":
+      {
+        "bases":
+        {
+          "MISC":
+          {
+            "Q": ""
+          },
+          "RESOURCES":
+          {
+            "Q": ""
+          },
+          "SOURCE": 
+          {
+            "Q": ""
+          },
+          "TARGET": 
+          {
+            "Q": ""
+          },
+          "TEST": 
+          {
+            "Q": ""
+          }
+        }
+      }
+    }
+  ]
+}
+
+
+
+  // DO NOT USE!! EMPTY TEMPLATES BELOW IN CASE WE ADD DRAWERS.
+
+
+
+
+
+
+
+/*
+  {
+    "id": 16,
+    "names": 
+    {
+      "original": "",
+      "github": "",
+      "gitlab": "",
+      "website_repo": ""
+    },
+    "description": "",
+    "version": "0.0.01",
+    "devteam":
+    {
+      "lead": "",
+      "devs":
+      [
+
+      ]
+    },
+    "paths":
+    {
+      "github": "",
+      "gitlab": "",
+      "website_repo": ""
+    },
+    "tree":
+    {
+      "bases":
+      {
+        "MISC":
+        {
+          "Q": ""
+        },
+        "RESOURCES":
+        {
+          "Q": ""
+        },
+        "SOURCE": 
+        {
+          "Q": ""
+        },
+        "TARGET": 
+        {
+          "Q": ""
+        },
+        "TEST": 
+        {
+          "Q": ""
+        }
+      }
+    }
+  ]
+} */

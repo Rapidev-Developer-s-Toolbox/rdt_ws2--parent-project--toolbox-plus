@@ -1,0 +1,41 @@
+#_# old .git directories #_#
+#_#_#_#_#_#_#_#_#_#_#_#_#_#
+**/old-dot-git/**
+
+#_# Compiled source #_#
+#_#_#_#_#_#_#_#_#_#_#_#
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+#_# Packages #_#
+#_#_#_#_#_#_#_#
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+#_# Logs and databases #_#
+#_#_#_#_#_#_#_#_#_#_#_#_#
+*.log
+*.sql
+*.sqlite
+
+#_# OS generated files #_#
+#_#_#_#_#_#_#_#_#_#_#_#_#
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
