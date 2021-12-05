@@ -1,9 +1,10 @@
 #!/usr/bin/python
 
-import os, sys, getopt, pathlib
+import os, getopt, pathlib
+from sys import argv
 
 PROG = argv[0]
-NUMARGS = len(sys.argv)
+NUMARGS = len(argv)
 RDT_BASE = "~/CODING_PROJECTS/C_workspaces/rdt_workspaces"
 SG_PARENT = pathlib.Path
 SG_DRAWER = Drawer()
@@ -15,11 +16,14 @@ args = []
 
 rc = RepoCracker()
 
-def main(argv):   
-      try:
-   	   getopt.getopt(argv, "hvVd:p:", ["drawer=","message-prefix="])
-      except getopt.GetoptError:
-         os.system("/usr/bin/bash; . ./liberrors-sh/*sh; throw_fatal_error 140")
+def getargs(args_array):
+   try:
+      getopt.getopt(argv, "hvVd:p:", ["drawer=","message-prefix="])
+   except getopt.GetoptError:
+      os.system("/usr/bin/bash; . ./liberrors-sh/*sh; throw_fatal_error 140")
+
+def main(argv):
+   args = getargs(argv)
          
 def print_usage():
    print('USAGE:')
