@@ -21,12 +21,13 @@ RDTAO_HELPER_handle_option (){
 
 }
 
-RDTAO_HELPER_map_cases () {
+_map_cases () {
 	declare -a casemap
 	for c in {AO_INPUT_ARRAY[@]}; do
 		if [[ "${c}" =~ \-.* ]] ; then
 			{casemap["${c}"]}='O'
 		fi
+		
 		if [[ "${c}" =~ \-.* ]]
 		else
 			{casemap["${c}"]}='A'
