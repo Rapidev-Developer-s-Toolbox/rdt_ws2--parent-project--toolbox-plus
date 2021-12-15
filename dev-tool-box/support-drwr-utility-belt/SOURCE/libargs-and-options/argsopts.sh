@@ -11,7 +11,7 @@ declare -a OA_OPT_ARRAY
 declare -a OA_ARG_ARRAY
 declare -A OA_OPTARG_ARRAY
 
-#specify any odded options to the space-separated list below, as soon as they are added.  
+#specify any added options to the space-separated list below, as soon as they are added.  
 
 
 ao_sort (){
@@ -39,14 +39,12 @@ ao_allopts () {
 
 if [ "${EXTGLOB_STATUS}" = "extglob on" ]; then
 	shopt -s extglob
-elif [ "${EXTGLOB_STATUS}" = "extglob off" ]; then
+else [ "${EXTGLOB_STATUS}" = "extglob off" ]; then
 	shopt -u extglob
-else
-	throw_recoverable_error 
 fi
 
 for i in "${AO_INPUT_ARRAY[@]}"; do
-  case i in 
+  case "${i}" in 
 	"")
 		true
 	;;
