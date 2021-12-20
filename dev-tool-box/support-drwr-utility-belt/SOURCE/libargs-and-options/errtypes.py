@@ -1,0 +1,3 @@
+class ParamTypeException(TypeError):
+    pass
+
