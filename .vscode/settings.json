@@ -3,5 +3,8 @@
         "lib"
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "python.analysis.extraPaths": [
+        "./lib/splitgit/SRC"
+    ]
 }
