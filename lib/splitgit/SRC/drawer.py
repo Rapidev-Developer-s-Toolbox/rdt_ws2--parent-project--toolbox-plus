@@ -1,17 +1,14 @@
-#!/usr/bin/python
-
-import os, pathlib
+import os, pathlib, random
 
 class Drawer:
-       ID = ''
-       NAME = ''
-       PATH = ''
-       PATH_PARTS = ''
+    '''If the base directory is unknown, it can be omitted in constructor calls, but it must be replaced with an empty string.'''
+    drwr_id = ''
+    drwr_name = ''
+    locationpath: pathlib.Path= ''
+    locpath_parts: list[str] = ''
        
-       def __init__(self,id,name,path):
-          self.ID = id
-          self.NAME = name
-          p = pathlib.Path(path)
-          self.PATH = p
-          self.PATH_PARTS = p.parts
-          self.PARENT = pathlib.parent(PUREPATH)
+    def __init__(self, basedir):
+        self.id = random
+        self.parentpath = basedir
+        self.poss_locationpaths = pathlib.glob(basedir.append('/**/*drwr-*'))
+        self.locpath_parts = list().append('/').extend(list(self.locationpath.split('/')))

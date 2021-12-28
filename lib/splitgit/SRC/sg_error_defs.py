@@ -1,11 +1,20 @@
 class Internal_Error(Exception):
-   pass
+    pass
 
 class UserInputError(IOError):
-   pass
+    pass
+
+class ArgsCountError(UserInputError):
+    pass
+
+class ArgsFormatError(UserInputError):
+    pass
 
 class NoDirectoryError(UserInputError):
-   pass
+    pass
 
-class TooManyArgsError(UserInputError):
-   pass
+class TooManyArgsError(ArgsCountError):
+    pass
+
+class TooFewArgsError(ArgsCountError):
+    pass
