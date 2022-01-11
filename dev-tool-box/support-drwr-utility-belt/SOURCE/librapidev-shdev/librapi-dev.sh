@@ -92,8 +92,6 @@ function getbasedir{
     fi
 }
 
-function amiinbasedir{
 
-}
 
 function isargbasedir
