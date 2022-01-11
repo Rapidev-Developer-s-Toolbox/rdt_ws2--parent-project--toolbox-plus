@@ -87,20 +87,19 @@ class SgArgsContext_Resolver:
             return False
         return True
 
-    def _add_subp_and_parse(self, p: argparse.ArgumentParser, arglist):
+    def _add_subp_and_parse(self, p: argparse.ArgumentParser, arglist: list):
         sp = p.add_subparsers()
         type = _determine_calltype()
         sp_p = sp.add_parser()
         if (self.cmd_ln_type == 'shortversion'):
             sp_p.add_argument('drawers', nargs='+', dest='drwrs_ls', action='append_const').parse_args(namespace='SgArgsContext')    
-        elif (self.cmd_ln_type != 'shortversion'):
-            sp_p.add_argument('--message-prefix', '-p', dest='SgArgsContext')
-            if (self.cmd_ln_type == 'longversion_ls'):
-                sp_p.add_argument('--drawers', '-D', nargs=1, dest='drwrs_ls', type='list', action='store_const').parse_args(namespace='SgArgsContext')
-            elif (self.cmd_ln_type == 'longversion_str'):
-                sp_p.add_argument('--drawer', '-d', nargs=1, dest='drwrs_ls', type='str', action='store_const').parse_args(namespace='SgArgsContext')
         else:
-            raise Internal_Error('args_service__:__line 93')
+            sp_p.add_argument('--message-prefix', '-p', dest='SgArgsContext', action='store_const')
+            if (self.cmd_ln_type == 'longversion_ls'):
+                sp_p.add_argument('--drawers', '-D', nargs=1, dest='drwrs_ls', type='list', action='store').parse_args(namespace='SgArgsContext')
+            elif (self.cmd_ln_type == 'longversion_str'):
+                sp_p.add_argument('--drawer', '-d', nargs=1, dest='drwrs_ls', type='str', action='store').parse_args(namespace='SgArgsContext')
+        
         
         self.drwrs_ls.extend(sp_p)
         return sp_p
@@ -109,7 +108,7 @@ class SgArgsContext_Resolver:
 
         
 
-    def parse(self, arglist, p):
+    def process_namespace_obj(self):
         td = self._determine_calltype(argslist)     
         if td == True:
             p = self.getparser()
@@ -120,3 +119,4 @@ class SgArgsContext_Resolver:
     
 
     
+#   
