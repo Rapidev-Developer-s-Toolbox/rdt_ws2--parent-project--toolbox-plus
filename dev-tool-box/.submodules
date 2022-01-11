@@ -1,0 +1,31 @@
+[submodule "01_arctools"]
+    path = drawer-scoped_subtree_workspaces/rdt-drwr_ws01--arctools
+    url = git://github.com/organizations/Rapidev-Developer-s-Toolbox/.git
+
+[submodule "02_code-comp"]
+    path = drawer-scoped_subtree_workspaces/rdt-drwr_ws02--code-comp
+    url = git://github.com/organizations/Rapidev-Developer-s-Toolbox/.git
+
+[submodule "03_codemode"]
+    path = drawer-scoped_subtree_workspaces/rdt-drwr_ws01--arctools
+    url = git://github.com/organizations/Rapidev-Developer-s-Toolbox/.git
+
+[submodule "04_config-saw"]
+    path = drawer-scoped_subtree_workspaces/rdt-drwr_ws02--code-comp
+    url = git://github.com/organizations/Rapidev-Developer-s-Toolbox/.git
+
+[submodule "05_connect-collect"]
+    path = drawer-scoped_subtree_workspaces/rdt-drwr_ws01--arctools
+    url = git://github.com/organizations/Rapidev-Developer-s-Toolbox/.git
+
+[submodule "06_containster"]
+    path = drawer-scoped_subtree_workspaces/rdt-drwr_ws02--code-comp
+    url = git://github.com/organizations/Rapidev-Developer-s-Toolbox/.git
+
+[submodule "07_envarment"]
+    path = drawer-scoped_subtree_workspaces/rdt-drwr_ws01--arctools
+    url = git://github.com/organizations/Rapidev-Developer-s-Toolbox/.git
+
+[submodule "08_logging-chain"]
+    path = drawer-scoped_subtree_workspaces/rdt-drwr_ws02--code-comp
+    url = git://github.com/organizations/Rapidev-Developer-s-Toolbox/.git
