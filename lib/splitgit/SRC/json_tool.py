@@ -10,12 +10,12 @@ class JsonCreateTool:
     # 'minified' (one-line), 'compact' ( "key": {\n ), or 'pretty' ( "key": \n{\n )
     write_format = 'pretty'
     
-    
-    def open_array(self):
+    j
+    def open_state_array(self):
        self.state_list.append('[')
        self.levels += 1
            
-    def close_array(self):
+    def close_state_array(self):
        if (self.state_list[-1] != '['):
           if FLAG_no_open_arrays:
              raise JsonNestingError("Can not close array. There are no arrays opened.")
@@ -26,7 +26,7 @@ class JsonCreateTool:
           self.state_list.pop(-1)
           self.levels -= 1
           
-    def open_object():
+    def statelist_open_obj():
        self.state_list.append('{')
            
     def close_object():
@@ -49,7 +49,7 @@ class JsonReader:
        print(f.readline())
     
     def parse_object(file, firstline, lastline):
-       for l in file:
+       (readline(l) for l in file)
           
        
     def parse_line(openedfile, index):
