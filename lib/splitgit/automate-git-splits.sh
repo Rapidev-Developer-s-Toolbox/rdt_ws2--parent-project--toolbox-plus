@@ -16,9 +16,9 @@ echo "${0}: Result of attempt to import error handling was: " | tee -a liblog.lo
 echo "${0}: ${?}" | tee -a liblog.log
 echo "${0}: If result was not 0, then script is broken." | tee -a liblog.log
 
-SG_PARENT={}
+# SG_PARENT={}
 SG_DRAWER=-1
-SG_PREFIX=-1
+#SG_PREFIX=-1
 
 # this needs changed. For now, it only supports usages 2 & 3. needs to be fed through an argparser.
 
