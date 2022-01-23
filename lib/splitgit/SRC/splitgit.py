@@ -6,8 +6,9 @@ from sys import argv
 PROG = argv[0]
 NUMARGS = len(argv)
 RDT_BASE = "~/CODING_PROJECTS/C_workspaces/rdt_workspaces"
-SG_PARENT = pathlib.Path
-SG_DRAWER = Drawer()
+SG_PARENT = RDT_BASE+'/dev-tool-box/'
+SG_DRAWERNAME = Drawer(SG_PARENT,)
+SG_DRAWERPATH = 
 SG_PREFIX=''
 SG_DRAWERLIST = {}
 opts = []
