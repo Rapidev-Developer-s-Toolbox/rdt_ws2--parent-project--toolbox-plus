@@ -1,0 +1,876 @@
+//Filetype: .jsonA  ...same as (and bkwd compatible with) jsonc, but with **AS** alias keyword
+//**AS** lets you define aliases for strings ~inside the string!~ Defined by this syntax:
+
+//   DEFINING:
+// before     "some_string": "/some/arbitrarily/long,/often/used,/and/often/changing/value"
+// after      "some_string|*AS*|sst": "some arbitrarily long, often used, and often changing value"
+
+//   REUSE:
+//before      "/other/contextual/prefix/some/arbitrarily/long,/often/used,/and/often/changing/value"
+//after       "/other/contextual/prefix-*|sst|*-"
+
+// list of all drawers (subdirs of dev-tool-box directory.) 
+// Used by git-subtree splits script.
+{
+	"drawers": [{
+    	"id": 1,
+      	"names": {
+			//the name of the toolset, i.e.'config-saw','codecomp', etc... 
+			"codename|*AS*|CNAME": "",
+			//Name of the containing dirfile. Usually just the codename, but normalized, and with prefix of 'drwr--' and suffix '-tools'
+			"dirname|*AS*|DRWR": "",
+			//Full RDT-scope path, from (and starting with) the `rdt_ws2` dir (currently `c-rapidev_ws2`, name may change) to dirname.
+			"metaproject_pathname|*AS*|TWEEN": ""
+		},
+		"remotes": {
+        	"original": "",
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|CNAME|*"
+      	},
+      	"description": "",
+      	"version": "0.0.01",
+      	"devteam":{
+        	"lead": "",
+        	"developers":[
+
+        	]
+      	},
+      	"metaproject_urls": {
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|TWEEN|*/*|DRWR|*"
+      	},
+      	"tree": {
+        	"bases": {
+          		"MISC": {
+            		"Q": ""
+    		    },
+    		    "RESOURCES": {
+    		        "Q": ""
+    		    },
+    		    "SOURCE": {
+    		        "Q": ""
+    		    },
+    		    "TARGET": {
+    		        "Q": ""
+    		    },
+    		    "TEST": {
+    		        "Q": ""
+    		    }
+    		}
+    	}
+    },
+    {
+    	"id": 2,
+      	"names": {
+			//the name of the toolset, i.e.'config-saw','codecomp', etc... 
+			"codename|*AS*|CNAME": "",
+			//Name of the containing dirfile. Usually just the codename, but normalized, and with prefix of 'drwr--' and suffix '-tools'
+			"dirname|*AS*|DRWR": "",
+			//Full RDT-scope path, from (and starting with) the `rdt_ws2` dir (currently `c-rapidev_ws2`, name may change) to dirname.
+			"metaproject_pathname|*AS*|TWEEN": ""
+		},
+		"remotes": {
+        	"original": "",
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|CNAME|*"
+      	},
+      	"description": "",
+      	"version": "0.0.01",
+      	"devteam":{
+        	"lead": "",
+        	"developers":[
+
+        	]
+      	},
+      	"metaproject_urls": {
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|TWEEN|*/*|DRWR|*"
+      	},
+      	"tree": {
+        	"bases": {
+          		"MISC": {
+            		"Q": ""
+    		    },
+    		    "RESOURCES": {
+    		        "Q": ""
+    		    },
+    		    "SOURCE": {
+    		        "Q": ""
+    		    },
+    		    "TARGET": {
+    		        "Q": ""
+    		    },
+    		    "TEST": {
+    		        "Q": ""
+    		    }
+    		}
+    	}
+    }, 
+	{
+    	"id": 3,
+      	"names": {
+			//the name of the toolset, i.e.'config-saw','codecomp', etc... 
+			"codename|*AS*|CNAME": "",
+			//Name of the containing dirfile. Usually just the codename, but normalized, and with prefix of 'drwr--' and suffix '-tools'
+			"dirname|*AS*|DRWR": "",
+			//Full RDT-scope path, from (and starting with) the `rdt_ws2` dir (currently `c-rapidev_ws2`, name may change) to dirname.
+			"metaproject_pathname|*AS*|TWEEN": ""
+		},
+		"remotes": {
+        	"original": "",
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|CNAME|*"
+      	},
+      	"description": "",
+      	"version": "0.0.01",
+      	"devteam":{
+        	"lead": "",
+        	"developers":[
+
+        	]
+      	},
+      	"metaproject_urls": {
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|TWEEN|*/*|DRWR|*"
+      	},
+      	"tree": {
+        	"bases": {
+          		"MISC": {
+            		"Q": ""
+    		    },
+    		    "RESOURCES": {
+    		        "Q": ""
+    		    },
+    		    "SOURCE": {
+    		        "Q": ""
+    		    },
+    		    "TARGET": {
+    		        "Q": ""
+    		    },
+    		    "TEST": {
+    		        "Q": ""
+    		    }
+    		}
+    	}
+    },
+    {
+    	"id": 4,
+      	"names": {
+			//the name of the toolset, i.e.'config-saw','codecomp', etc... 
+			"codename|*AS*|CNAME": "",
+			//Name of the containing dirfile. Usually just the codename, but normalized, and with prefix of 'drwr--' and suffix '-tools'
+			"dirname|*AS*|DRWR": "",
+			//Full RDT-scope path, from (and starting with) the `rdt_ws2` dir (currently `c-rapidev_ws2`, name may change) to dirname.
+			"metaproject_pathname|*AS*|TWEEN": ""
+		},
+		"remotes": {
+        	"original": "",
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|CNAME|*"
+      	},
+      	"description": "",
+      	"version": "0.0.01",
+      	"devteam":{
+        	"lead": "",
+        	"developers":[
+
+        	]
+      	},
+      	"metaproject_urls": {
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|TWEEN|*/*|DRWR|*"
+      	},
+      	"tree": {
+        	"bases": {
+          		"MISC": {
+            		"Q": ""
+    		    },
+    		    "RESOURCES": {
+    		        "Q": ""
+    		    },
+    		    "SOURCE": {
+    		        "Q": ""
+    		    },
+    		    "TARGET": {
+    		        "Q": ""
+    		    },
+    		    "TEST": {
+    		        "Q": ""
+    		    }
+    		}
+    	}
+    },
+    {
+    	"id": 5,
+      	"names": {
+			//the name of the toolset, i.e.'config-saw','codecomp', etc... 
+			"codename|*AS*|CNAME": "",
+			//Name of the containing dirfile. Usually just the codename, but normalized, and with prefix of 'drwr--' and suffix '-tools'
+			"dirname|*AS*|DRWR": "",
+			//Full RDT-scope path, from (and starting with) the `rdt_ws2` dir (currently `c-rapidev_ws2`, name may change) to dirname.
+			"metaproject_pathname|*AS*|TWEEN": ""
+		},
+		"remotes": {
+        	"original": "",
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|CNAME|*"
+      	},
+      	"description": "",
+      	"version": "0.0.01",
+      	"devteam":{
+        	"lead": "",
+        	"developers":[
+
+        	]
+      	},
+      	"metaproject_urls": {
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|TWEEN|*/*|DRWR|*"
+      	},
+      	"tree": {
+        	"bases": {
+          		"MISC": {
+            		"Q": ""
+    		    },
+    		    "RESOURCES": {
+    		        "Q": ""
+    		    },
+    		    "SOURCE": {
+    		        "Q": ""
+    		    },
+    		    "TARGET": {
+    		        "Q": ""
+    		    },
+    		    "TEST": {
+    		        "Q": ""
+    		    }
+    		}
+    	}
+    },
+    {
+    	"id": 6,
+      	"names": {
+			//the name of the toolset, i.e.'config-saw','codecomp', etc... 
+			"codename|*AS*|CNAME": "",
+			//Name of the containing dirfile. Usually just the codename, but normalized, and with prefix of 'drwr--' and suffix '-tools'
+			"dirname|*AS*|DRWR": "",
+			//Full RDT-scope path, from (and starting with) the `rdt_ws2` dir (currently `c-rapidev_ws2`, name may change) to dirname.
+			"metaproject_pathname|*AS*|TWEEN": ""
+		},
+		"remotes": {
+        	"original": "",
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|CNAME|*"
+      	},
+      	"description": "",
+      	"version": "0.0.01",
+      	"devteam":{
+        	"lead": "",
+        	"developers":[
+
+        	]
+      	},
+      	"metaproject_urls": {
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|TWEEN|*/*|DRWR|*"
+      	},
+      	"tree": {
+        	"bases": {
+          		"MISC": {
+            		"Q": ""
+    		    },
+    		    "RESOURCES": {
+    		        "Q": ""
+    		    },
+    		    "SOURCE": {
+    		        "Q": ""
+    		    },
+    		    "TARGET": {
+    		        "Q": ""
+    		    },
+    		    "TEST": {
+    		        "Q": ""
+    		    }
+    		}
+    	}
+    },
+    {
+    	"id": 7,
+      	"names": {
+			//the name of the toolset, i.e.'config-saw','codecomp', etc... 
+			"codename|*AS*|CNAME": "",
+			//Name of the containing dirfile. Usually just the codename, but normalized, and with prefix of 'drwr--' and suffix '-tools'
+			"dirname|*AS*|DRWR": "",
+			//Full RDT-scope path, from (and starting with) the `rdt_ws2` dir (currently `c-rapidev_ws2`, name may change) to dirname.
+			"metaproject_pathname|*AS*|TWEEN": ""
+		},
+		"remotes": {
+        	"original": "",
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|CNAME|*"
+      	},
+      	"description": "",
+      	"version": "0.0.01",
+      	"devteam":{
+        	"lead": "",
+        	"developers":[
+
+        	]
+      	},
+      	"metaproject_urls": {
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|TWEEN|*/*|DRWR|*"
+      	},
+      	"tree": {
+        	"bases": {
+          		"MISC": {
+            		"Q": ""
+    		    },
+    		    "RESOURCES": {
+    		        "Q": ""
+    		    },
+    		    "SOURCE": {
+    		        "Q": ""
+    		    },
+    		    "TARGET": {
+    		        "Q": ""
+    		    },
+    		    "TEST": {
+    		        "Q": ""
+    		    }
+    		}
+    	}
+    },
+    {
+    	"id": 8,
+      	"names": {
+			//the name of the toolset, i.e.'config-saw','codecomp', etc... 
+			"codename|*AS*|CNAME": "",
+			//Name of the containing dirfile. Usually just the codename, but normalized, and with prefix of 'drwr--' and suffix '-tools'
+			"dirname|*AS*|DRWR": "",
+			//Full RDT-scope path, from (and starting with) the `rdt_ws2` dir (currently `c-rapidev_ws2`, name may change) to dirname.
+			"metaproject_pathname|*AS*|TWEEN": ""
+		},
+		"remotes": {
+        	"original": "",
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|CNAME|*"
+      	},
+      	"description": "",
+      	"version": "0.0.01",
+      	"devteam":{
+        	"lead": "",
+        	"developers":[
+
+        	]
+      	},
+      	"metaproject_urls": {
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|TWEEN|*/*|DRWR|*"
+      	},
+      	"tree": {
+        	"bases": {
+          		"MISC": {
+            		"Q": ""
+    		    },
+    		    "RESOURCES": {
+    		        "Q": ""
+    		    },
+    		    "SOURCE": {
+    		        "Q": ""
+    		    },
+    		    "TARGET": {
+    		        "Q": ""
+    		    },
+    		    "TEST": {
+    		        "Q": ""
+    		    }
+    		}
+    	}
+    },
+    {
+    	"id": 9,
+      	"names": {
+			//the name of the toolset, i.e.'config-saw','codecomp', etc... 
+			"codename|*AS*|CNAME": "",
+			//Name of the containing dirfile. Usually just the codename, but normalized, and with prefix of 'drwr--' and suffix '-tools'
+			"dirname|*AS*|DRWR": "",
+			//Full RDT-scope path, from (and starting with) the `rdt_ws2` dir (currently `c-rapidev_ws2`, name may change) to dirname.
+			"metaproject_pathname|*AS*|TWEEN": ""
+		},
+		"remotes": {
+        	"original": "",
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|CNAME|*"
+      	},
+      	"description": "",
+      	"version": "0.0.01",
+      	"devteam":{
+        	"lead": "",
+        	"developers":[
+
+        	]
+      	},
+      	"metaproject_urls": {
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|TWEEN|*/*|DRWR|*"
+      	},
+      	"tree": {
+        	"bases": {
+          		"MISC": {
+            		"Q": ""
+    		    },
+    		    "RESOURCES": {
+    		        "Q": ""
+    		    },
+    		    "SOURCE": {
+    		        "Q": ""
+    		    },
+    		    "TARGET": {
+    		        "Q": ""
+    		    },
+    		    "TEST": {
+    		        "Q": ""
+    		    }
+    		}
+    	}
+    },
+    {
+    	"id": 10,
+      	"names": {
+			//the name of the toolset, i.e.'config-saw','codecomp', etc... 
+			"codename|*AS*|CNAME": "",
+			//Name of the containing dirfile. Usually just the codename, but normalized, and with prefix of 'drwr--' and suffix '-tools'
+			"dirname|*AS*|DRWR": "",
+			//Full RDT-scope path, from (and starting with) the `rdt_ws2` dir (currently `c-rapidev_ws2`, name may change) to dirname.
+			"metaproject_pathname|*AS*|TWEEN": ""
+		},
+		"remotes": {
+        	"original": "",
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|CNAME|*"
+      	},
+      	"description": "",
+      	"version": "0.0.01",
+      	"devteam":{
+        	"lead": "",
+        	"developers":[
+
+        	]
+      	},
+      	"metaproject_urls": {
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|TWEEN|*/*|DRWR|*"
+      	},
+      	"tree": {
+        	"bases": {
+          		"MISC": {
+            		"Q": ""
+    		    },
+    		    "RESOURCES": {
+    		        "Q": ""
+    		    },
+    		    "SOURCE": {
+    		        "Q": ""
+    		    },
+    		    "TARGET": {
+    		        "Q": ""
+    		    },
+    		    "TEST": {
+    		        "Q": ""
+    		    }
+    		}
+    	}
+    },
+    {
+    	"id": 11,
+      	"names": {
+			//the name of the toolset, i.e.'config-saw','codecomp', etc... 
+			"codename|*AS*|CNAME": "",
+			//Name of the containing dirfile. Usually just the codename, but normalized, and with prefix of 'drwr--' and suffix '-tools'
+			"dirname|*AS*|DRWR": "",
+			//Full RDT-scope path, from (and starting with) the `rdt_ws2` dir (currently `c-rapidev_ws2`, name may change) to dirname.
+			"metaproject_pathname|*AS*|TWEEN": ""
+		},
+		"remotes": {
+        	"original": "",
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|CNAME|*"
+      	},
+      	"description": "",
+      	"version": "0.0.01",
+      	"devteam":{
+        	"lead": "",
+        	"developers":[
+
+        	]
+      	},
+      	"metaproject_urls": {
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|TWEEN|*/*|DRWR|*"
+      	},
+      	"tree": {
+        	"bases": {
+          		"MISC": {
+            		"Q": ""
+    		    },
+    		    "RESOURCES": {
+    		        "Q": ""
+    		    },
+    		    "SOURCE": {
+    		        "Q": ""
+    		    },
+    		    "TARGET": {
+    		        "Q": ""
+    		    },
+    		    "TEST": {
+    		        "Q": ""
+    		    }
+    		}
+    	}
+    },
+    {
+    	"id": 12,
+      	"names": {
+			//the name of the toolset, i.e.'config-saw','codecomp', etc... 
+			"codename|*AS*|CNAME": "",
+			//Name of the containing dirfile. Usually just the codename, but normalized, and with prefix of 'drwr--' and suffix '-tools'
+			"dirname|*AS*|DRWR": "",
+			//Full RDT-scope path, from (and starting with) the `rdt_ws2` dir (currently `c-rapidev_ws2`, name may change) to dirname.
+			"metaproject_pathname|*AS*|TWEEN": ""
+		},
+		"remotes": {
+        	"original": "",
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|CNAME|*"
+      	},
+      	"description": "",
+      	"version": "0.0.01",
+      	"devteam":{
+        	"lead": "",
+        	"developers":[
+
+        	]
+      	},
+      	"metaproject_urls": {
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|TWEEN|*/*|DRWR|*"
+      	},
+      	"tree": {
+        	"bases": {
+          		"MISC": {
+            		"Q": ""
+    		    },
+    		    "RESOURCES": {
+    		        "Q": ""
+    		    },
+    		    "SOURCE": {
+    		        "Q": ""
+    		    },
+    		    "TARGET": {
+    		        "Q": ""
+    		    },
+    		    "TEST": {
+    		        "Q": ""
+    		    }
+    		}
+    	}
+    },
+    {
+    	"id": 13,
+      	"names": {
+			//the name of the toolset, i.e.'config-saw','codecomp', etc... 
+			"codename|*AS*|CNAME": "",
+			//Name of the containing dirfile. Usually just the codename, but normalized, and with prefix of 'drwr--' and suffix '-tools'
+			"dirname|*AS*|DRWR": "",
+			//Full RDT-scope path, from (and starting with) the `rdt_ws2` dir (currently `c-rapidev_ws2`, name may change) to dirname.
+			"metaproject_pathname|*AS*|TWEEN": ""
+		},
+		"remotes": {
+        	"original": "",
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|CNAME|*"
+      	},
+      	"description": "",
+      	"version": "0.0.01",
+      	"devteam":{
+        	"lead": "",
+        	"developers":[
+
+        	]
+      	},
+      	"metaproject_urls": {
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|TWEEN|*/*|DRWR|*"
+      	},
+      	"tree": {
+        	"bases": {
+          		"MISC": {
+            		"Q": ""
+    		    },
+    		    "RESOURCES": {
+    		        "Q": ""
+    		    },
+    		    "SOURCE": {
+    		        "Q": ""
+    		    },
+    		    "TARGET": {
+    		        "Q": ""
+    		    },
+    		    "TEST": {
+    		        "Q": ""
+    		    }
+    		}
+    	}
+    },
+    {
+    	"id": 14,
+      	"names": {
+			//the name of the toolset, i.e.'config-saw','codecomp', etc... 
+			"codename|*AS*|CNAME": "",
+			//Name of the containing dirfile. Usually just the codename, but normalized, and with prefix of 'drwr--' and suffix '-tools'
+			"dirname|*AS*|DRWR": "",
+			//Full RDT-scope path, from (and starting with) the `rdt_ws2` dir (currently `c-rapidev_ws2`, name may change) to dirname.
+			"metaproject_pathname|*AS*|TWEEN": ""
+		},
+		"remotes": {
+        	"original": "",
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|CNAME|*"
+      	},
+      	"description": "",
+      	"version": "0.0.01",
+      	"devteam":{
+        	"lead": "",
+        	"developers":[
+
+        	]
+      	},
+      	"metaproject_urls": {
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|TWEEN|*/*|DRWR|*"
+      	},
+      	"tree": {
+        	"bases": {
+          		"MISC": {
+            		"Q": ""
+    		    },
+    		    "RESOURCES": {
+    		        "Q": ""
+    		    },
+    		    "SOURCE": {
+    		        "Q": ""
+    		    },
+    		    "TARGET": {
+    		        "Q": ""
+    		    },
+    		    "TEST": {
+    		        "Q": ""
+    		    }
+    		}
+    	}
+    },
+    {
+    	"id": 15,
+      	"names": {
+			//the name of the toolset, i.e.'config-saw','codecomp', etc... 
+			"codename|*AS*|CNAME": "",
+			//Name of the containing dirfile. Usually just the codename, but normalized, and with prefix of 'drwr--' and suffix '-tools'
+			"dirname|*AS*|DRWR": "",
+			//Full RDT-scope path, from (and starting with) the `rdt_ws2` dir (currently `c-rapidev_ws2`, name may change) to dirname.
+			"metaproject_pathname|*AS*|TWEEN": ""
+		},
+		"remotes": {
+        	"original": "",
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|CNAME|*"
+      	},
+      	"description": "",
+      	"version": "0.0.01",
+      	"devteam":{
+        	"lead": "",
+        	"developers":[
+
+        	]
+      	},
+      	"metaproject_urls": {
+        	"github": "",
+        	"gitlab": "",
+        	"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|TWEEN|*/*|DRWR|*"
+      	},
+      	"tree": {
+        	"bases": {
+          		"MISC": {
+            		"Q": ""
+    		    },
+    		    "RESOURCES": {
+    		        "Q": ""
+    		    },
+    		    "SOURCE": {
+    		        "Q": ""
+    		    },
+    		    "TARGET": {
+    		        "Q": ""
+    		    },
+    		    "TEST": {
+    		        "Q": ""
+    		    }
+    		}
+    	}
+    },
+    {
+    	"id": 16,
+      	"names": {
+			//the name of the toolset, i.e.'config-saw','codecomp', etc... 
+			"codename|*AS*|CNAME": "",
+			//Name of the containing dirfile. Usually just the codename, but normalized, and with prefix of 'drwr--' and suffix '-tools'
+			"dirname|*AS*|DRWR": "",
+			//Full RDT-scope path, from (and starting with) the `rdt_ws2` dir (currently `c-rapidev_ws2`, name may change) to dirname.
+			"metaproject_pathname|*AS*|TWEEN": ""
+		},
+		"remote_drawerproject_urls": {
+    		"original": "",
+    		"github": "",
+    		"gitlab": "",
+    		"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|TWEEN|*/*|DRWR|*"
+  		},
+  		"description": "",
+  		"version": "0.0.01",
+  		"devteam": {
+    		"lead": "",
+    		"developers":[
+    		]
+  		},
+  		"metaproject_urls": {
+    		"github": "",
+    		"gitlab": "",
+    		"website_repo": "https://rdt-devel.rapidev.org/git/ws2/*|CNAME|*"
+  		},
+  		"tree": {
+    		"bases": {
+		        "MISC": {
+		            "Q": ""
+		        },
+		        "RESOURCES": {
+		            "Q": ""
+		        },
+		        "SOURCE": {
+		            "Q": ""
+		        },
+		        "TARGET": {
+		            "Q": ""
+		          },
+		        "TEST": {
+            	    "Q": ""
+      			}
+    		}    
+      	}
+    }],
+	"user_commonpaths": [{
+		"project_username": "",
+		"local_commonpath": ""
+	},
+	{
+		"project_username": "",
+		"local_commonpath": ""
+	},
+	{
+		"project_username": "",
+		"local_commonpath": ""
+	}]
+
+}
+
+
+
+  // DO NOT USE!! EMPTY TEMPLATES BELOW IN CASE WE ADD DRAWERS.
+
+
+
+
+
+
+
+/*
+  {
+    "id": 16,
+    "names": 
+    {
+      "original": "",
+      "github": "",
+      "gitlab": "",
+      "website_repo": ""
+    },
+    "description": "",
+    "version": "0.0.01",
+    "devteam":
+    {
+      "lead": "",
+      "devs":
+      [
+
+      ]
+    },
+    "paths":
+    {
+      "github": "",
+      "gitlab": "",
+      "website_repo": ""
+    },
+    "tree":
+    {
+      "bases":
+      {
+        "MISC":
+        {
+          "Q": ""
+        },
+        "RESOURCES":
+        {
+          "Q": ""
+        },
+        "SOURCE": 
+        {
+          "Q": ""
+        },
+        "TARGET": 
+        {
+          "Q": ""
+        },
+        "TEST": 
+        {
+          "Q": ""
+        }
+      }
+    }
+  ]
+} */
