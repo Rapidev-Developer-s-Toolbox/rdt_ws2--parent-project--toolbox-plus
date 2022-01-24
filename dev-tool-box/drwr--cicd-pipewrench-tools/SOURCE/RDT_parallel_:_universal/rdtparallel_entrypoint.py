@@ -6,6 +6,9 @@ import argparse
 # ~! GLOBALS !~
 # These are to be mapped to the environment variables used by the program.
 
+env_dict = dict()
+programs_list = list()
+
 def cli_entrypoint_main(self, argv):
     argp = argparse.ArgumentParser()
     argp.add_argument("echo")
